@@ -1,0 +1,266 @@
+﻿@model _eway.Models.ProductoAireAcondicionado
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProductoAireAcondicionado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Alto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Alto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ancho)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ancho)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Categoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContenidoNeto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContenidoNeto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PesoBruto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PesoBruto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Profundo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Profundo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variedad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variedad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AltoExterior)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AltoExterior)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnchoExterior)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnchoExterior)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Autolimpiante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Autolimpiante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeflectorAire)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeflectorAire)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DisplayLSD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisplayLSD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EficienciaEnergeticaCalor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EficienciaEnergeticaCalor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EficienciaEnergeticaFrio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EficienciaEnergeticaFrio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FrigoriasCalor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FrigoriasCalor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FrigoriasFrio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FrigoriasFrio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FuncionAutomatico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FuncionAutomatico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FuncionDeshumificador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FuncionDeshumificador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FuncionTurbo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FuncionTurbo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FuncionVentilacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FuncionVentilacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PotenciaCalefaccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PotenciaCalefaccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PotenciaRefrigeracion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PotenciaRefrigeracion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProfundidadExterior)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProfundidadExterior)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sleep)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sleep)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TamanoAmbienteRecom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TamanoAmbienteRecom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Timer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Timer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoClimatizacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoClimatizacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Wifi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Wifi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

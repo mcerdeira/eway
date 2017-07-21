@@ -1,0 +1,164 @@
+﻿@model IEnumerable<_eway.Models.ProductoCelular>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm())
+{
+    <p>
+        Filtrar por nombre: @Html.TextBox("SearchString")
+        <input type="submit" value="Search" />
+    </p>
+}
+
+@{bool idAdmin = System.Configuration.ConfigurationManager.AppSettings["AdminUserId"] == Context.User.Identity.Name; }
+
+<table class="table">
+    <tr>
+        @if (idAdmin)
+        {
+            <th></th>
+        }
+        <th>
+            @Html.DisplayNameFor(model => model.Alto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ancho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Categoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContenidoNeto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Marca)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PesoBruto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Profundo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Variedad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CamaraResolucion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CapacidadBateria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MemoriaExpandida)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Procesador)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Resolicion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ResolucionVideo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SistemaOperativo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TamanoPantalla)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VelocidadInternet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VersionSistemaOperativo)
+        </th>        
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            @if (idAdmin)
+            {
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { GLN = item.GLN, GTIN = item.GTIN }) |
+                    @Html.ActionLink("Details", "Details", new { GLN = item.GLN, GTIN = item.GTIN }) |
+                    @Html.ActionLink("Delete", "Delete", new { GLN = item.GLN, GTIN = item.GTIN })
+                </td>
+            }
+            <td>
+                @Html.DisplayFor(modelItem => item.Alto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ancho)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categoria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContenidoNeto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PesoBruto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Profundo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Variedad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CamaraResolucion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CapacidadBateria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MemoriaExpandida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Procesador)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Resolicion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResolucionVideo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SistemaOperativo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TamanoPantalla)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VelocidadInternet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VersionSistemaOperativo)
+            </td>
+        </tr>
+    }
+
+</table>

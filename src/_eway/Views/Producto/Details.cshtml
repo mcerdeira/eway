@@ -1,0 +1,98 @@
+﻿@model _eway.Models.Producto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Producto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Alto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Alto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ancho)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ancho)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Categoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContenidoNeto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContenidoNeto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PesoBruto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PesoBruto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Profundo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Profundo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variedad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variedad)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
