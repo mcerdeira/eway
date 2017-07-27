@@ -105,6 +105,5 @@ C:\Development\_eway\src\_eway\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Development\_eway\src\_eway\bin\Microsoft.Owin.Security.Google.xml
 C:\Development\_eway\src\_eway\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Development\_eway\src\_eway\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Development\_eway\src\_eway\obj\Debug\_eway.csprojResolveAssemblyReference.cache
 C:\Development\_eway\src\_eway\obj\Debug\_eway.dll
 C:\Development\_eway\src\_eway\obj\Debug\_eway.pdb

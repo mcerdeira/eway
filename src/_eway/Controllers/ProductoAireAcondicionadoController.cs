@@ -16,6 +16,14 @@ namespace eway.Controllers
     {
         private CatalogoContext db = new CatalogoContext();
 
+        /*
+         @*@using (Html.BeginForm("Search", "ProductoAireAcondicionado")) Para cambia la accion del Form*@
+        public ActionResult Search(string SearchString)
+        {
+            return View("Index", db.ProductoAireAcondicionado.Where(p => p.Descripcion.Contains(SearchString)));            
+        }
+        */
+
         public ActionResult Index(string SearchString)
         {
             if (SearchString == null || SearchString.Trim() == "")
