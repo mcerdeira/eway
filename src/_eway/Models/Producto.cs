@@ -12,14 +12,14 @@ namespace _eway.Models
         [Key]
         [Column(Order = 1)]
         [Required]
-        [StringLength(13)]
-        [RegularExpression("^[0-9]*$")]
+        [StringLength(13, ErrorMessage = "El largo maximo es 13")]
+        [RegularExpression("^[0-9]*$", ErrorMessage="Debe contener numeros")]
         public string GLN { get; set; }
         [Key]
         [Column(Order = 2)]
         [Required]
-        [StringLength(13)]
-        [RegularExpression("^[0-9]*$")]
+        [StringLength(13, ErrorMessage="El largo maximo es 13")]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "Debe contener numeros")]
         public string GTIN { get; set; }
 
         [Required]
